@@ -7,7 +7,6 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.Dp
 import androidx.compose.ui.graphics.Shape
 
-
 data class MangaColors(
     val primaryText: Color,
     val primaryBackground: Color,

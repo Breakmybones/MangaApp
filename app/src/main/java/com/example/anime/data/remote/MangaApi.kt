@@ -1,7 +1,7 @@
 package com.example.anime.data.remote
 
-import com.example.anime.data.MangaListResponse
-import com.example.anime.data.MangaResponse
+import com.example.anime.data.response.MangaListResponse
+import com.example.anime.data.response.MangaResponse
 import retrofit2.http.GET
 import retrofit2.http.Path
 import retrofit2.http.Query

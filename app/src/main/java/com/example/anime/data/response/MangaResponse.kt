@@ -1,4 +1,4 @@
-package com.example.anime.data
+package com.example.anime.data.response
 
 import com.google.gson.annotations.SerializedName
 

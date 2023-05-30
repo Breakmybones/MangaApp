@@ -25,7 +25,7 @@ class HomeViewModel(
     fun event(homeEvent: HomeEvent) {
         when (homeEvent) {
             is HomeEvent.OnLoadManga -> onLoadManga()
-            is HomeEvent.OnMangaClick -> OnMangaClick(homeEvent.manga)
+            is HomeEvent.OnMangaClick -> onMangaClick(homeEvent.manga)
         }
     }
 
@@ -56,7 +56,7 @@ class HomeViewModel(
         }
     }
 
-    private fun OnMangaClick(manga: MangaModel) {
+    private fun onMangaClick(manga: MangaModel) {
         viewModelScope.launch {
             _action.emit(
                 HomeAction.Navigate(mangaId = manga.id ?: 0)

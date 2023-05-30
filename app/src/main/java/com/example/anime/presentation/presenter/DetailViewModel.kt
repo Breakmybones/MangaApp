@@ -19,11 +19,11 @@ class DetailViewModel(
 
     fun event(detailEvent: DetailsEvent) {
         when (detailEvent) {
-            is DetailsEvent.OnLoadManga -> OnLoadManga(detailEvent.mangaId)
+            is DetailsEvent.OnLoadManga -> onLoadManga(detailEvent.mangaId)
         }
     }
 
-    private fun OnLoadManga(
+    private fun onLoadManga(
         mangaId: Int
     ) {
         viewModelScope.launch {

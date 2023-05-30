@@ -9,10 +9,8 @@ import androidx.compose.runtime.Composable
 import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.text.style.TextAlign
-import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.compose.collectAsStateWithLifecycle
-import androidx.lifecycle.viewmodel.compose.viewModel
 import coil.compose.AsyncImagePainter
 import coil.compose.SubcomposeAsyncImage
 import coil.compose.SubcomposeAsyncImageContent
@@ -146,10 +144,3 @@ fun MangaScreen(
     }
 }
 
-@Preview(showBackground = true)
-@Composable
-fun DefaultPreview() {
-    MangaTheme() {
-        MangaScreen(manga = MangaModel(1, "anime", "https:\\/\\/cdn.myanimelist.net\\/images\\/manga\\/3\\/258224t.jpg", "hdhjhjsjорвсыиилмшрслосчччччччччччччччччччччччччччччччччччччччччччччччччччччччччччччччччччччччччччччччччччччччjsdj", 2023, "anime"))
-    }
-}
